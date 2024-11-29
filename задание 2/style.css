@@ -1,0 +1,50 @@
+* {
+    /*  width и height элементов включают в
+        себя значения полей и границ  */
+    box-sizing: border-box;
+}
+.grid-init {
+    max-width: 400px; /* максимальная ширина контейнера */
+    margin: auto; /* центрирование контейнера на странице */
+    background-color: rgb(31, 97, 150); /* фон */
+    padding: 10px; /* внутренние отступы */
+}
+.box-init {
+    font-size: larger; /* размер шрифта */
+    color: #fff; /* цвет текста */
+    border-radius: 5px; /* скругление углов */
+    background-color: #3a8cca; /* цвет фона */
+    border: 1px solid rgb(95, 188, 198); /* граница блока */
+    padding: 10px; /* внутренние отступы */
+    /*  выравнивание текста по центру блока
+        с помощью CSS Flexbox  */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    }
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "my-nav my-header my-header"
+        "my-nav my-main my-aside"
+        "my-nav my-section my-aside"
+        "my-nav my-footer my-footer";
+}
+l-header {
+    grid-area: my-header;
+}
+.l-nav {
+    grid-area: my-nav;
+}
+.l-main {
+    grid-area: my-main;
+}
+.l-aside {
+    grid-area: my-aside;
+}
+.l-section {
+    grid-area: my-section;
+}
+.l-footer {
+    grid-area: my-footer.
